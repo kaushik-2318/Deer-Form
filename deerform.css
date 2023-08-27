@@ -1,0 +1,343 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+main{
+    background-image: url(BlueDeerFormImage.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: rgba(22,41,56,255);
+    font-family: 'Poppins', sans-serif;
+}
+/*
+========================
+        Rotation
+========================
+*/
+.card{
+    height: 400px;
+    width: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.rotate{
+    transform: rotateY(180deg);
+}
+.cardrotate{
+    height: 400px;
+    width: 400px;
+    transform-style: preserve-3d;
+    transition: transform 1s;
+    position: relative;
+    perspective: 800px;
+}
+.front,.back{
+    position: absolute;
+    height: 400px;
+    width: 400px;
+    backface-visibility: hidden;
+    backdrop-filter: blur(5px);
+    display: grid;
+    place-content: center;
+}
+.back{
+    /* border: 1px solid red; */
+    transform: rotateY(180deg);
+}
+
+
+
+
+
+
+.login{
+    margin-top: -13px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+}
+/*
+=======================================
+        Login Email
+=======================================
+*/
+.email{
+    margin-top: 20px;
+    text-align: center;
+    position: relative;
+}
+#email{
+    font-weight: bold;
+    height: 10px;
+    width: 250px;
+    padding: 20px;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    background: none;
+    outline: none;
+    border-color: rgba(22,41,56,255);
+}
+.email-label{
+    position: absolute;
+    font-size: 15px;
+    display: block;
+    transition: .5s;
+    cursor: text;
+    top: -12px;
+    right: 250px;
+}
+#email::placeholder{
+    color: transparent;
+}
+#email:placeholder-shown~.email-label{
+    top: 11px;
+    right: 219px;
+    font-size: 20px;
+}
+/*
+=======================================
+        Login Password
+=======================================
+*/
+.password{
+    margin-top: 45px;
+    text-align: center;
+    position: relative;
+}
+#password{
+    font-weight: bold;
+    height: 10px;
+    width: 250px;
+    padding: 20px;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    background: none;
+    outline: none;
+}
+.password-label{
+    position: absolute;
+    font-size: 15px;
+    display: block;
+    transition: .5s;
+    cursor: text;
+    top: -12px;
+    right: 216px;
+}
+#password::placeholder{
+    color: transparent;
+}
+#password:placeholder-shown~.password-label{
+    top: 11px;
+    right: 177px;
+    font-size: 20px;
+}
+
+
+
+.login-link{
+    margin-top: 30px;
+    margin-left: 10px;
+}
+.turn{
+    text-decoration: underline;
+    color: blue;
+}
+.turn:hover{
+    cursor: pointer;
+}
+
+.button{
+    color: white;
+    background-color: rgba(22,41,56,255);
+    margin-top: 20px;
+    height: 45px;
+    width: 100%;
+    font-size: 20px;
+    font-weight: 400;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+=======================================
+        SignUp Card
+=======================================
+*/
+.signup{
+    margin-top: -20px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+}
+/*
+=======================================
+        SignUp UserName
+=======================================
+*/
+.signup-username{
+    margin-top: 20px;
+    text-align: center;
+    position: relative;
+}
+#signup-username{
+    width: 250px;
+    padding: 12px;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    font-weight: bold;
+    background: none;
+    outline: none;
+    border-color: rgba(22,41,56,255);
+}
+.signup-username-label{
+    position: absolute;
+    font-size: 14px;
+    display: block;
+    transition: .5s;
+    cursor: text;
+    top: -10px;
+    right: 204px;
+}
+#signup-username::placeholder{
+    color: transparent;
+}
+#signup-username:placeholder-shown~.signup-username-label{
+    top: 9px;
+    right: 179px;
+    font-size: 17px;
+}
+/*
+=======================================
+        SignUp Email
+=======================================
+*/
+.signup-email{
+    margin-top: 20px;
+    text-align: center;
+    position: relative;
+}
+#signup-email{
+    width: 250px;
+    padding: 12px;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    font-weight: bold;
+    background: none;
+    outline: none;
+    border-color: rgba(22,41,56,255);
+}
+.signup-email-label{
+    position: absolute;
+    font-size: 14px;
+    display: block;
+    transition: .5s;
+    cursor: text;
+    top: -10px;
+    right: 237px;
+}
+#signup-email::placeholder{
+    color: transparent;
+}
+#signup-email:placeholder-shown~.signup-email-label{
+    top: 7px;
+    right: 220px;
+    font-size: 17px;
+}
+/*
+=======================================
+        SignUp Password
+=======================================
+*/
+.signup-password{
+    margin-top: 20px;
+    text-align: center;
+    position: relative;
+}
+#signup-password{
+    margin-top: 0px;
+    width: 250px;
+    padding: 12px;
+    font-weight: bold;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    background: none;
+    outline: none;
+    border-color: rgba(22,41,56,255);
+}
+.signup-password-label{
+    position: absolute;
+    font-size: 14px;
+    display: block;
+    transition: .5s;
+    cursor: text;
+    top: -10px;
+    right: 208px;
+}
+#signup-password::placeholder{
+    color: transparent;
+}
+#signup-password:placeholder-shown~.signup-password-label{
+    top: 6px;
+    right: 179px;
+    font-size: 18px;
+}
+
+
+
+/*
+=======================================
+        SignUp Link
+=======================================
+*/
+.signup-link{
+    margin-top: 20px;
+    margin-left: 10px;
+}
+.loginturn{
+    text-decoration: underline;
+    color: blue;
+}
+.loginturn:hover{
+    cursor: pointer;
+}
+/*
+=======================================
+        Submit Button
+=======================================
+*/
+.signup-button{
+    color: white;
+    background-color: rgba(22,41,56,255);
+    margin-top: 10px;
+    height: 45px;
+    width: 280px;
+    font-size: 17px;
+    border-radius: 5px;
+    outline: none;
+    border: none
+}

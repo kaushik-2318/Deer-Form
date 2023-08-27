@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="deerform.css">
+    <title>Login Form</title>
+</head>
+<body>
+    <main>
+        <div class="card">
+            <div class="cardrotate">
+                <div class="front">
+                    <div class="login">LOGIN</div>
+    
+                    <div class="email">
+                        <input type="email" name="email" id="email" placeholder="Email">
+                        <label class="email-label" for="email">Email</label>
+                    </div>
+    
+                    <div class="password">
+                        <input type="password" name="password" id="password" placeholder="Password">
+                        <label class="password-label" for="password">Password</label>
+                    </div>
+                    <div class="login-link">
+                        Don't have Account <span class="turn">SignUp?</span>
+                    </div>
+                    <div>
+                        <button type="submit" class="button">SUBMIT</button>
+                    </div>
+                </div>
+
+                <div class="back">
+                    <div class="signup">SIGN UP</div>
+    
+                    <div class="signup-username">
+                        <input type="username" name="username" id="signup-username" placeholder="username">
+                        <label class="signup-username-label" for="username">Username</label>
+                    </div>
+    
+                    <div class="signup-email">
+                        <input type="email" name="email" id="signup-email" placeholder="Email">
+                        <label class="signup-email-label" for="email">Email</label>
+                    </div>
+    
+                    <div class="signup-password">
+                        <input type="password" name="password" id="signup-password" placeholder="Password">
+                        <label class="signup-password-label" for="password">Password</label>
+                    </div>
+    
+                    <div class="signup-link">
+                        Have Account <span class="loginturn">Login?</span>
+                    </div>
+                    <div>
+                        <button type="submit" class="signup-button">SUBMIT</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.0/dist/jquery.min.js"></script>
+    <script src="deerform.js"></script>
+</body>
+</html>
